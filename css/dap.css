@@ -1,0 +1,65 @@
+/*  Designed by Digital Artist Prateek
+    Onine Tresure Hunt Base for College Fest
+*/
+
+
+@font-face {
+    font-family: custom;
+    src: url(/fonts/font.ttf);
+}
+
+html, body
+
+{
+
+  background: -webkit-linear-gradient(90deg, #F1F2B5 10%, #135058 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #F1F2B5 10%, #135058 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #F1F2B5 10%, #135058 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #F1F2B5 10%, #135058 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #F1F2B5 10%, #135058 90%); /* W3C */
+  font-size: 2em;
+  line-height: 18px;
+  font-family: 'custom',arial,sans-seri;
+  line-height: 23px;
+}
+.login-box
+{
+  border: 1px solid rgb(0, 0, 0);
+  margin-left: 10%;
+  margin-top: 20%;
+  float:left;
+  width: 30%;
+  padding :10px;
+}
+.register
+{
+  border: 1px solid rgb(0, 0, 0);
+  float:right;
+  margin-top:20%;
+  margin-right:10%;
+  width: 30%;
+  padding :10px;
+}
+button
+{
+  float:center;
+  background-color:#fff44;
+}
+legend
+{
+  text-align:center;
+
+}
+
+input
+{
+  border : 1px solid #e4e4e4;
+  margin:4px;
+  float:right;
+}
+
+.button
+{
+  border:1px solid #E4E4E4;
+
+}
