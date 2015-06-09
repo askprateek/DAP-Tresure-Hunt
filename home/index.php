@@ -18,8 +18,8 @@ if( isset( $_SESSION["login_user"]))
     <div class ="container">
       <div class="panel panel-default">
       <div class ="panels-body">
-      <ul class = "list-inline">
-        <li> <a href="/" >Home</a> </li>
+      <ul class = "nav nav-tabs">
+        <li class ="active"> <a href="/" >Home</a> </li>
         <li> <a href="leaderboard.php">Leaderboard</a> </li>
         <li> <a href="../../logout.php">Logout</a> </li>
       </ul>
