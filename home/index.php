@@ -25,6 +25,14 @@ if( isset( $_SESSION["login_user"]))
       </ul>
       Welcome <?php  echo $_SESSION["login_user"]; ?>
     </div>
+
+  </div>
+  <div class = "row">
+    <div class="col-sm-12">
+
+      <h1 align="center"> Question will be shown here </h1>
+
+    </div>
   </div>
   </div>
 
