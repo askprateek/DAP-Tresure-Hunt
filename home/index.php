@@ -1,7 +1,9 @@
 <?php
 session_start();
+require("../dbconnect.php");
 if( isset( $_SESSION["login_user"]))
 {
+  $user=$_SESSION["login_user"];
 ?>
 
 <html>
@@ -31,7 +33,17 @@ if( isset( $_SESSION["login_user"]))
     <div class="col-sm-12">
 
       <h1 align="center"> Question will be shown here </h1>
+      <?php
+    //  $user=$_SESSION["login_user"];
+      echo $user;
+      $sql= "SELECT level FROM users WHERE username = '$user'";
+      $level = mysql_fetch_row(mysql_query($sql));
+      $question = "SELECT * FROM questions WHERE q_id ='$level[0]'";
+      $result = mysql_query($question);
+      $result =mysql_fetch_row($result);
+      echo $result[1];
 
+      ?>
     </div>
   </div>
   </div>
