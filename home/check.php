@@ -11,7 +11,16 @@ if (isset($_SESSION["login_user"]))
     $ans=mysql_fetch_row(mysql_query($sql));
     if ($user_answer==$ans[0])
     {
-      echo "Correct answer";
+      $lvlup=$level[0]+1;
+      $sql="UPDATE users SET level='$lvlup' WHERE username='$user'";
+      $update=mysql_query($sql);
+      if ($update)
+      {
+        header("location:correct.php");
+      }
+    }
+    else {
+      header("location:/");
     }
 
 }
