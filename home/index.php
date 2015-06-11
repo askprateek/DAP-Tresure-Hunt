@@ -41,15 +41,12 @@ if( isset( $_SESSION["login_user"]))
           $question = "SELECT * FROM questions WHERE q_id ='$level[0]'";
           $result = mysql_query($question);
           $result =mysql_fetch_row($result);
-          echo $result[1];
-          ?>
-
+          ?> <h2> <?php echo $result[1]; ?></h2>
           <form class="form-horizontal" role="form" action = "check.php" method = "POST">
             <div class="form-group">
               <label class="col-sm-2 control-label"></label>
               <div class="col-sm-8">
                 <input class="form-control" id="box" name ="user_answer" type="text" placeholder = "Your Answer Here :v">
-                <input id ="button" type ="submit" value = "Submit">
               </div>
             </div>
           </div>
