@@ -14,7 +14,7 @@ $email=mysql_real_escape_string($email);
 $password=md5(mysql_real_escape_string($password));
 
     /*Adding User details in database */
-$query = "INSERT INTO users (username, password, email_id,level,status) VALUES ('$username', '$password', '$email','1','user')";
+$query = "INSERT INTO users (username, password, email_id,level,satus,time_stamp) VALUES ('$username', '$password', '$email','1','user','now()')";
 $result = mysql_query($query);
 if($result)
 {
