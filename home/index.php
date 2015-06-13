@@ -22,7 +22,7 @@ if( isset( $_SESSION["login_user"]))
         <div class ="panels-body">
           <ul class = "nav nav-tabs">
             <li class ="active"> <a href="/" >Home</a> </li>
-            <li> <a href="leaderboard.php">Leaderboard</a> </li>
+            <li> <a href="../leaderboard">Leaderboard</a> </li>
             <li> <a href="../../logout.php">Logout</a> </li>
           </ul>
           Welcome <?php  echo $_SESSION["login_user"]; ?>

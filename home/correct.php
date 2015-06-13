@@ -12,7 +12,6 @@
 <body>
 <div class = "container">
   <div class ="jumbotron">
-    ?>
     <h1 align="center"> Correct Answer XD</h1>
   </div>
 </div>
