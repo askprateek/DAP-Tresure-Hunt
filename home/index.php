@@ -13,22 +13,21 @@ if( isset( $_SESSION["login_user"]))
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DAP Treasure Hunt</title>
     <link rel="stylesheet" type="text/css" href="../css/dap.css">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
   </head>
   <title> Welcome <?php $_SESSION["login_user"]; ?> </title>
   <body>
     <div class ="container">
-      <div class="panel panel-default">
-        <div class ="panels-body">
-          <ul class = "nav nav-tabs">
-            <li class ="active"> <a href="/" >Home</a> </li>
-            <li> <a href="../leaderboard">Leaderboard</a> </li>
-            <li> <a href="../../logout.php">Logout</a> </li>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Logo</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="../leaderboard">Leaderboard</a></li>
+            <li><a href="../logout.php">Logout</a></li>
           </ul>
-          Welcome <?php  echo $_SESSION["login_user"]; ?>
         </div>
-
-      </div>
+      </nav>
       <div class = "row">
         <div class="col-sm-12" align ="center">
 
