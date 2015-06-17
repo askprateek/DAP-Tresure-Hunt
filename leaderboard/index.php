@@ -4,7 +4,7 @@ include("../dbconnect.php");
 <div class ="container" >
   <div class ="jumbotron">
     <?php
-    $sql = "SELECT * FROM users ORDER BY level ASC, time_stamp ASC";
+    $sql = "SELECT * FROM users ORDER BY level DESC, time_stamp ASC";
     $result =mysql_query($sql);
     if (mysql_fetch_row($result) > 0)
     {
