@@ -15,7 +15,7 @@ else
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DAP Treasure Hunt</title>
     <link rel="stylesheet" type="text/css" href="css/dap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 
   </head>
   <body>
@@ -26,8 +26,8 @@ else
       <div class ="login-box">
         <fieldset><legend id ="legend">User Login </legend>
           <form method = "POST" action = "login.php" name="User login">
-            <br> Username : <input id = "box" type ="text" name = "username" required ><br>
-            <br> Password :<input id ="box" type = "password" name = "password" required> <br>
+            <br><i class="mdi-action-account-box"></i> Username : <input id = "box" type ="text" name = "username" required ><br>
+            <br><i class="mdi-editor-border-color"></i> Password :<input id ="box" type = "password" name = "password" required> <br>
             <br> <input id ="button" type ="submit" value ="Login" ><br>
           </form>
         </fieldset>
