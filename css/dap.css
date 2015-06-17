@@ -3,10 +3,6 @@
 */
 
 
-@font-face {
-    font-family: custom;
-    src: url(/fonts/font.ttf);
-}
 
 html, body
 
@@ -17,10 +13,6 @@ html, body
   background:     -ms-linear-gradient(90deg, #F1F2B5 10%, #135058 90%); /* IE10 */
   background:      -o-linear-gradient(90deg, #F1F2B5 10%, #135058 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, #F1F2B5 10%, #135058 90%); /* W3C */
-  font-size: 2em;
-  line-height: 18px;
-  font-family: 'custom',arial,sans-seri;
-  line-height: 23px;
 }
 .login-box
 {
