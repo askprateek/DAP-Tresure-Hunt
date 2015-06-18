@@ -24,7 +24,7 @@ include("../dbconnect.php");
       </div>
     </nav>
     <div class ="row">
-      <div class ="col-s10" align = "center">
+      <div class ="col s12" align ="center">
         <table>
           <thead>
             <tr>
