@@ -29,7 +29,7 @@ if( isset( $_SESSION["login_user"]))
         </div>
       </nav>
       <div class = "row">
-        <div class="col-s12" align ="center">
+        <div class="col s12" align ="center">
 
           <h1 align="center"> Question will be shown here </h1>
           <?php
