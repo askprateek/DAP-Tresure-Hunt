@@ -20,7 +20,7 @@ if( isset( $_SESSION["login_user"]))
     <div class ="container">
       <nav>
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Logo</a>
+          <a href="#" class="brand-logo">DAP Treasure Hunt</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="/">Home</a></li>
             <li><a href="../leaderboard">Leaderboard</a></li>
