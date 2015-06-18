@@ -22,14 +22,14 @@ if( isset( $_SESSION["login_user"]))
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">DAP Treasure Hunt</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="/">Home</a></li>
+            <li class ="active"><a href="/">Home</a></li>
             <li><a href="../leaderboard">Leaderboard</a></li>
             <li><a href="../logout.php">Logout</a></li>
           </ul>
         </div>
       </nav>
       <div class = "row">
-        <div class="col-sm-12" align ="center">
+        <div class="col-s12" align ="center">
 
           <h1 align="center"> Question will be shown here </h1>
           <?php
