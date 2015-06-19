@@ -17,6 +17,12 @@ html, body
   background:         linear-gradient(90deg, #F1F2B5 10%, #135058 90%); /* W3C
 */
 }
+.widget-item
+{
+  padding:5px;
+  margin:10px;
+  background-color: white;
+}
 .login-box
 {
   border: 1px solid rgb(0, 0, 0);
