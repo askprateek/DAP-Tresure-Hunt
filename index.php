@@ -8,20 +8,19 @@ if (isset($_SESSION["login_user"]))
 else
 {
   ?>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DAP Treasure Hunt</title>
-    <link rel="stylesheet" type="text/css" href="css/dap.css">
-    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+  <html>
+      <head>
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/dap.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-  </head>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      </head>
   <body>
     <div class ="container">
       <div class="page-header">
-        <h1>Online Treasure Hunt </h1>
+        <h1>Online Treasure Hunt</h1>
       </div>
       <div class ="login-box">
         <fieldset><legend id ="legend">User Login </legend>
@@ -45,11 +44,10 @@ else
       </div>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+    <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
   </html>
 
   <?php

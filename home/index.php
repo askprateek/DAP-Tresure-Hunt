@@ -7,14 +7,15 @@ if( isset( $_SESSION["login_user"]))
   ?>
 
   <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DAP Treasure Hunt</title>
-    <link rel="stylesheet" type="text/css" href="../css/dap.css">
-    <link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
-  </head>
+      <head>
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../css/dap.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      </head>
+  <body>
   <title> Welcome <?php $_SESSION["login_user"]; ?> </title>
   <body>
     <div class ="container">
