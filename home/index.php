@@ -7,23 +7,32 @@ if( isset( $_SESSION["login_user"]))
   ?>
 
   <html>
-      <head>
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="../css/dap.css"  media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+  <head>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/dap.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
 
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-      </head>
-  <body>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  </head>
   <title> Welcome <?php $_SESSION["login_user"]; ?> </title>
   <body>
     <div class ="container">
-      <nav>
+      <nav class="indigo darken-4">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">DAP Treasure Hunt</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class ="active"><a href="/">Home</a></li>
+          <!-- These navigation links disappear if the screen gets too small. -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="../leaderboard">Leaderboard</a></li>
+            <li><a href="../logout.php">Logout</a></li>
+          </ul>
+          <!-- Put up a "hamburger" menu when the web page gets too narrow -->
+          <a href="#" data-activates="slide-out" class="button-collapse" ><i class="mdi-navigation-menu"></i></a>
+          <!-- These navigation links appear when the web page gets narrow. -->
+          <!-- They appear when the user clicks the hamburger menu. -->
+          <ul class="side-nav" id="slide-out">
+            <li><a href="/">Home</a></li>
             <li><a href="../leaderboard">Leaderboard</a></li>
             <li><a href="../logout.php">Logout</a></li>
           </ul>
@@ -52,12 +61,20 @@ if( isset( $_SESSION["login_user"]))
           </div>
         </div>
       </div>
-
-      </html>
-
-      <?php
-    }
-    else {
-      echo "NO Access";
-    }
-    ?>
+    </body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Activate the side menu
+      $(".button-collapse").sideNav();
+    });
+    </script>
+    </html>
+    <?php
+  }
+  else {
+    echo "NO Access";
+  }
+  ?>
