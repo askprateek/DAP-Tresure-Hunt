@@ -18,20 +18,10 @@ if( isset( $_SESSION["login_user"]))
   <title> Welcome <?php $_SESSION["login_user"]; ?> </title>
   <body>
     <div class ="container">
-      <nav class="indigo darken-4">
+      <nav>
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">DAP Treasure Hunt</a>
-          <!-- These navigation links disappear if the screen gets too small. -->
           <ul class="right hide-on-med-and-down">
-            <li><a href="/">Home</a></li>
-            <li><a href="../leaderboard">Leaderboard</a></li>
-            <li><a href="../logout.php">Logout</a></li>
-          </ul>
-          <!-- Put up a "hamburger" menu when the web page gets too narrow -->
-          <a href="#" data-activates="slide-out" class="button-collapse" ><i class="mdi-navigation-menu"></i></a>
-          <!-- These navigation links appear when the web page gets narrow. -->
-          <!-- They appear when the user clicks the hamburger menu. -->
-          <ul class="side-nav" id="slide-out">
             <li><a href="/">Home</a></li>
             <li><a href="../leaderboard">Leaderboard</a></li>
             <li><a href="../logout.php">Logout</a></li>
