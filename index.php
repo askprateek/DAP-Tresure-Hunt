@@ -35,13 +35,13 @@ else
                     </div>
                     <div class="input-field col s12">
                       <i class="mdi-action-account-circle prefix"></i>
-                      <input id="username" type="text" class="validate">
+                      <input id="username" type="text" name="username" class="validate">
                       <label for="username">Username</label>
                     </div>
 
                     <div class="input-field col s12">
                       <i class="mdi-action-https prefix"></i>
-                      <input id="password" type="password" class="validate">
+                      <input id="password" type="password" name = "password" class="validate">
                       <label for="password">Password</label>
                     </div>
                     <div class="col s1">
