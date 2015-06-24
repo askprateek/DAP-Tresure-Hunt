@@ -59,7 +59,7 @@ else
                 <div class="widget-item z-depth-1">
 
                     <div class="row">
-                      <form class="col s12 offset">
+                      <form class="col s12 offset" action ="register.php" method="POST">
 
                           <div class="col s12">
                             <b>Login Here</b>
@@ -69,6 +69,11 @@ else
                             <input id="username" type="text" class="validate">
                             <label for="username">Username</label>
                           </div>
+                          <div class="input-field col s12">
+                            <i class="mdi-action-account-circle prefix"></i>
+                            <input id="email_id" type="text" class="validate">
+                            <label for="email_id">Email ID</label>
+                          </div>
 
                           <div class="input-field col s12">
                             <i class="mdi-action-https prefix"></i>
@@ -76,7 +81,7 @@ else
                             <label for="password">Password</label>
                           </div>
                           <div class="col s1">
-                          <button class="btn waves-effect waves-light" type="submit">Login<i class="mdi-action-lock-open right"></i></button>
+                          <button class="btn waves-effect waves-light" type="submit">Register<i class="mdi-action-lock-open right"></i></button>
                         </div>
 
                       </form>
