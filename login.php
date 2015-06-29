@@ -12,7 +12,7 @@ $count=mysql_num_rows($result);
 if ($count==1)
 {
 	$_SESSION["login_user"]=$user;
-	header("location:/home");
+	header("location:/hunt/home");
 }
 else {
 	echo "Wrong Username or Password";

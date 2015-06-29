@@ -3,7 +3,7 @@ include("dbconnect.php");
 session_start();
 if (isset($_SESSION["login_user"]))
 {
-  header("location: /home");
+  header("location:/hunt/home");
 }
 else
 {
