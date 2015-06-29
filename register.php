@@ -1,9 +1,6 @@
 <?php
 
 require('dbconnect.php');
-if (!empty($_POST['user-register']))
-{
-
 
 if(isset($_POST['newuser'])){ $username = $_POST['newuser']; }
 if(isset($_POST['email'])){ $email = $_POST['email']; }
@@ -19,8 +16,6 @@ $result = mysql_query($query);
 if($result)
 {
   echo "User Created Successfully.";
-}
-
 }
 
 ?>
