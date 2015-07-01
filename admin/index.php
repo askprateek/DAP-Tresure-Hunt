@@ -38,7 +38,34 @@ else {
       </div>
 
       <div class="col l3 lime lighten-2" style="height:100%">
-        latest logs are shown here
+        <table class="striped">
+        <thead>
+          <tr>
+              <th data-field="name"></th>
+              <th data-field="id">Question</th>
+              <th data-field="answr">Answer</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <?php
+          $sql = "SELECT * FROM logs ORDER BY id DESC";
+          $result=mysql_query($sql);
+          while ($row=mysql_fetch_array($result))
+          {
+            ?>
+
+          <tr>
+            <td><?php echo $row['name'] ?></td>
+            <td><?php echo $row['qid'] ?></td>
+            <td><?php echo $row['answer'] ?></td>
+          </tr>
+          <?php
+        }
+
+           ?>
+        </tbody>
+      </table>
 
       </div>
 
