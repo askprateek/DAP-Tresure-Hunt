@@ -9,18 +9,16 @@ if( isset( $_SESSION["login_user"]))
   <html>
   <head>
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../css/dap.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   </head>
   <title> Welcome <?php $_SESSION["login_user"]; ?> </title>
-  <body>
-    <div class ="container">
+  <body class="lime">
       <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">DAP Treasure Hunt</a>
+        <div class="nav-wrapper black">
+          <a href="#" class="brand-logo center">DAP Treasure Hunt</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="/">Home</a></li>
             <li><a href="../leaderboard">Leaderboard</a></li>
@@ -50,7 +48,6 @@ if( isset( $_SESSION["login_user"]))
             </div>
           </div>
         </div>
-      </div>
     </body>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
