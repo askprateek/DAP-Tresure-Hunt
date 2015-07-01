@@ -26,6 +26,7 @@ if( isset( $_SESSION["login_user"]))
           </ul>
         </div>
       </nav>
+      <div class="container">
       <div class = "row">
         <div class="col s12" align ="center">
 
@@ -48,6 +49,7 @@ if( isset( $_SESSION["login_user"]))
             </div>
           </div>
         </div>
+      </div>
     </body>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
