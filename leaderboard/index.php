@@ -3,25 +3,25 @@ include("../dbconnect.php");
 ?>
 <html>
     <head>
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="../css/dap.css"  media="screen,projection"/>
+      <!--Import materialize.css
+      <link type="text/css" rel="stylesheet" href="../css/dap.css"  media="screen,projection"/>-->
       <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     </head>
-<body><body>
-  <div class ="container" >
+<body class="lime">
     <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">DAP Treasure Hunt</a>
+      <div class="nav-wrapper black">
+        <a href="#" class="brand-logo center">DAP Treasure Hunt</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="../home">Home</a></li>
-          <li class = "active"><a href="/">Leaderboard</a></li>
+          <li class = "active"><a href="/hunt/leaderboard">Leaderboard</a></li>
           <li><a href="../logout.php">logout</a></li>
         </ul>
       </div>
     </nav>
+    <div class ="container" >
     <div class ="row">
       <div class ="col s12" align ="center">
         <table>
