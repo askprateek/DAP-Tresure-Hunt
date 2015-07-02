@@ -15,7 +15,7 @@ else {
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <body class="lime">
-    <nav>
+    <nav style="margin-bottom:10px;">
       <div class="nav-wrapper orange darken-1">
         <a href="#" class="brand-logo center">DAP Treasure Hunt</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
