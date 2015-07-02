@@ -17,9 +17,9 @@ else
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   </head>
   <body class="lime">
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo center">DAP Treasure Hunt</a>
+    <nav style="margin-bottom:10px;">
+      <div class="nav-wrapper black">
+        <a href="/hunt" class="brand-logo center">DAP Treasure Hunt</a>
       </div>
     </nav>
     <div class="container">

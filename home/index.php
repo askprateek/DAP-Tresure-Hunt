@@ -16,7 +16,7 @@ if( isset( $_SESSION["login_user"]))
   </head>
   <title> Welcome <?php $_SESSION["login_user"]; ?> </title>
   <body class="lime">
-      <nav>
+      <nav style="margin-bottom:10px;">
         <div class="nav-wrapper black">
           <a href="#" class="brand-logo center">DAP Treasure Hunt</a>
           <ul class="right hide-on-med-and-down">
