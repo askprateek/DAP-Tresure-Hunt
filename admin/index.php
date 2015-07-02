@@ -16,11 +16,11 @@ else {
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <body class="lime">
     <nav style="margin-bottom:10px;">
-      <div class="nav-wrapper orange darken-1">
+      <div class="nav-wrapper black">
         <a href="#" class="brand-logo center">DAP Treasure Hunt</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="/hunt/admin">Admin Home</a></li>
-          <li><a href="/logs">Logs</a></li>
+          <li><a href="/hunt/logs">Logs</a></li>
           <li ><a href="/hunt/leaderboard">Leaderboard</a></li>
           <li><a href="../logout.php">logout</a></li>
         </ul>
