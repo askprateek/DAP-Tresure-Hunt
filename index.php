@@ -18,7 +18,7 @@ else
   </head>
   <body class="lime">
     <nav>
-      <div class="nav-wrapper orange darken-1">
+      <div class="nav-wrapper black">
         <a href="#" class="brand-logo center">DAP Treasure Hunt</a>
       </div>
     </nav>
