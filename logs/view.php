@@ -1,36 +1,28 @@
 <html>
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"> </script>
-
-<script type="text/javascript">
-
-$(document).ready(function() {
-
-   $("#display").click(function() {
-
-     $.ajax({    //create an ajax request to load_page.php
-       type: "GET",
-       url: "fetch.php",
-       dataType: "html",   //expect html to be returned
-       success: function(response){
-           $("#responsecontainer").html(response);
-           //alert(response);
-       }
-
-   });
-});
-});
-
-</script>
-
+<head>
+  <script language="javascript" type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
 <body>
-<h3 align="center">Manage Student Details</h3>
-<table border="1" align="center">
-  <tr>
-      <td> <input type="button" id="display" value="Display All Data" /> </td>
-  </tr>
-</table>
-<div id="responsecontainer" align="center">
 
-</div>
-</body>
-</html>
+  <h2> Client example </h2>
+  <h3>Output: </h3>
+  <div id="output">this element will be accessed by jquery and this text replaced</div>
+
+  <script>
+             $(document).ready(function(){
+             var response = '';
+             $.ajax({ type: "GET",
+                      url: "fetch.php",
+                      async: false,
+                      success : function(text)
+                      {
+                          response = text;
+                      }
+             });
+
+             alert(response);
+             });
+
+    </script>
+  </body>
+  </html>
