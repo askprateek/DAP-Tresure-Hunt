@@ -22,7 +22,6 @@
 
              alert(response);
              });
-             </script>
 
     </script>
   </body>
