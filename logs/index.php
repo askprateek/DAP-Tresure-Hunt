@@ -6,7 +6,7 @@ include("../dbconnect.php");
       <!--Import materialize.css
       <link type="text/css" rel="stylesheet" href="../css/dap.css"  media="screen,projection"/>-->
       <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
-
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     </head>
@@ -54,13 +54,22 @@ include("../dbconnect.php");
            ?>
         </tbody>
       </table>
-
-
-
       </div>
     </div>
 
     </div>
     </div>
+    <script>
+    $(document).ready(function(){
+      var orignal;
+      $("tr").hover(function(){
+        original=$(this).css('background-color');
+        $(this).css("background-color","A2B021");
+    },
+    function(){
+      $(this).css("background-color",original);
+    });
+  });
+    </script>
   </body>
   </html>
