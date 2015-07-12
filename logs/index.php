@@ -1,15 +1,8 @@
-<?php
-include("../dbconnect.php");
-?>
 <html>
-    <head>
-      <!--Import materialize.css
-      <link type="text/css" rel="stylesheet" href="../css/dap.css"  media="screen,projection"/>-->
-      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
-      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    </head>
+<head>
+  <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+  <script language="javascript" type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
 <body class="lime">
   <nav style="margin-bottom:10px;">
     <div class="nav-wrapper black">
@@ -22,54 +15,49 @@ include("../dbconnect.php");
       </ul>
     </div>
   </nav>
-    <div class ="container" >
-    <div class ="row">
-      <div class ="col s12" align ="center">
 
-        <table class="striped">
-        <thead>
-          <tr>
-              <th data-field="name">Name</th>
-              <th data-field="id">Level</th>
-              <th data-field="answr">Answer</th>
-          </tr>
-        </thead>
 
-        <tbody>
-          <?php
-          $sql = "SELECT * FROM logs ORDER BY id DESC";
-          $result=mysql_query($sql);
-          while ($row=mysql_fetch_array($result))
-          {
-            ?>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th data-field="id">Question Number</th>
+          <th data-field="name">Username</th>
+          <th data-field="answer">Answer</th>
+        </tr>
+      </thead>
+      <tbody id = "output">
 
-          <tr>
-            <td><?php echo $row['name'] ?></td>
-            <td><?php echo $row['qid'] ?></td>
-            <td><?php echo $row['answer'] ?></td>
-          </tr>
-          <?php
-        }
+      </tbody>
+    </table>
 
-           ?>
-        </tbody>
-      </table>
-      </div>
-    </div>
 
-    </div>
-    </div>
-    <script>
-    $(document).ready(function(){
-      var orignal;
-      $("tr").hover(function(){
-        original=$(this).css('background-color');
-        $(this).css("background-color","A2B021");
-    },
-    function(){
-      $(this).css("background-color",original);
-    });
+  </div>
+
+  <script>
+  $(document).ready(function(){
+    var response = '';
+    $.ajax({ type: "POST",
+    url: "fetch.php",
+    async: false,
+    datatype: "json",
+    success : function(data)
+    {
+      var obj =JSON.parse(data);
+      var l = obj.length;
+      for ( var i=0; i<l ; i+=1)
+      {
+        $("#output").append("<tr><td>"+ obj[i].qid + "</td><td>" +obj[i].name + "</td><td>" +obj[i].answer +"</td></tr>");
+      }
+
+
+    }
   });
-    </script>
-  </body>
-  </html>
+
+});
+
+</script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="../js/materialize.min.js"> </script>
+</body>
+</html>
