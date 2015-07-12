@@ -16,13 +16,13 @@ if ($count==1)
 	{
 		$_SESSION['status']='admin';
 		$_SESSION[login_user]=$user;
-		header("location:/hunt/admin");
+		header("location:./admin");
 	}
 	elseif($details[5]=='user')
 	{
 		$_SESSION['status']='user';
 		$_SESSION[login_user]=$user;
-		header("location:/hunt/home");
+		header("location:./home");
 	}
 }
 else {

@@ -15,9 +15,9 @@ include("../dbconnect.php");
     <div class="nav-wrapper black">
       <a href="#" class="brand-logo center">DAP Treasure Hunt</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="/hunt/admin">Admin Home</a></li>
-        <li><a class= "active" href="/logs">Logs</a></li>
-        <li><a href="/hunt/leaderboard">Leaderboard</a></li>
+        <li><a href="../admin">Admin Home</a></li>
+        <li><a class= "active" href=".">Logs</a></li>
+        <li><a href="../leaderboard">Leaderboard</a></li>
         <li><a href="../logout.php">logout</a></li>
       </ul>
     </div>
